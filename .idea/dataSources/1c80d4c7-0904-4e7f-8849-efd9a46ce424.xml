@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="postgres">
+      <object-id>12669</object-id>
+      <visible>1</visible>
+    </database>
+    <schema id="2" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>919</introspection-state-number>
+      <introspection-timestamp>2016-10-04.21:48:06.025</introspection-timestamp>
+    </schema>
+    <schema id="3" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="4" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="5" parent="1" name="pg_temp_1">
+      <object-id>11848</object-id>
+    </schema>
+    <schema id="6" parent="1" name="pg_toast_temp_1">
+      <object-id>11849</object-id>
+    </schema>
+    <schema id="7" parent="1" name="information_schema">
+      <object-id>12381</object-id>
+    </schema>
+    <sequence id="8" parent="2" name="book_id_seq">
+      <object-id>24658</object-id>
+      <state-number>918</state-number>
+      <increment-by>50</increment-by>
+    </sequence>
+    <table id="9" parent="2" name="book">
+      <object-id>24660</object-id>
+      <state-number>919</state-number>
+    </table>
+    <column id="10" parent="9" name="id">
+      <state-number>919</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="11" parent="9" name="book_author">
+      <state-number>919</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="12" parent="9" name="book_price">
+      <state-number>919</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="13" parent="9" name="book_title">
+      <state-number>919</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="14" parent="9" name="book_pkey">
+      <object-id>24666</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="15" parent="9" name="book_pkey">
+      <object-id>24667</object-id>
+      <columns>id</columns>
+      <underlying-index>book_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
